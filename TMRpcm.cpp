@@ -3,7 +3,7 @@
 #include <pcmConfig.h>
 
 const byte togByte = _BV(ICIE1); //Get the value for toggling the buffer interrupt on/off
-#define buffSize 60 // size of the audio buffer in bytes
+#define buffSize 120 // size of the audio buffer in bytes
 #define rampMega
 
 volatile byte* TIMSK[] = {&TIMSK1, &TIMSK3, &TIMSK4, &TIMSK5};
